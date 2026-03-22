@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thanos Thiriou — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="glow" id="glow"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <span class="nav-logo">Thanos Thiriou</span>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a id="nav-email" href="#">Email</a>
+    <a href="https://jumpshare.com/share/HaQna2WvhnbMs1Mr6SXZ" target="_blank">CV</a>
+    <a href="https://www.linkedin.com/in/thanosthiriou/" target="_blank">LinkedIn</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">UI/UX Designer · Athens, Greece</div>
+
+  <h1 class="hero-headline r">
+    Good design<br>
+    is only half.<br>
+    I do the half<br>
+    that <strong>ships.</strong>
+  </h1>
+
+  <div class="hero-rule"></div>
+
+  <div class="hero-foot r d1">
+    <p class="hero-sub">
+      Design that holds up in production. Built by someone who understands both sides of the handoff.
+    </p>
+    <div class="hero-btns">
+      <button class="btn btn-primary"
+        onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
+        View Work ↓
+      </button>
+      <a href="https://github.com/thiriou" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECT -->
+<section id="work" class="section">
+  <div class="wrap">
+    <p class="eyebrow">Featured Project</p>
+
+    <div class="feat-visual r">
+      <span class="feat-badge">Design + Development</span>
+      <div class="feat-visual-inner">
+        <div class="feat-wordmark">TaskFlow</div>
+        <div class="feat-sublabel">Project Management Tool</div>
+      </div>
+    </div>
+
+    <div class="feat-body">
+      <div class="r">
+        <h2 class="feat-title">TaskFlow</h2>
+        <p class="feat-desc">
+          A minimal project management tool for small teams who need focus, not features.
+          Kanban-based, mobile-first, custom drag system — zero library dependencies.
+        </p>
+        <div class="feat-pills">
+          <a href="#" class="feat-pill">Live Demo ↗</a>
+          <a href="#" class="feat-pill">View Code ↗</a>
+        </div>
+      </div>
+
+      <div class="dstack r d1">
+        <div class="drow">
+          <h4>What it is</h4>
+          <p>A task board focused on speed and spatial clarity — drag-and-drop without the overhead.</p>
+        </div>
+        <div class="drow">
+          <h4>Key Decisions</h4>
+          <ul>
+            <li>Kanban layout for spatial memory</li>
+            <li>Custom drag — no dependencies</li>
+            <li>Mobile-first, desktop-enhanced</li>
+          </ul>
+        </div>
+        <div class="drow">
+          <h4>What I'd Improve</h4>
+          <ul>
+            <li>Keyboard shortcut layer for power users</li>
+            <li>Real-time collaborative cursors</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Case Studies</p>
+
+    <div class="case-grid">
+
+      <div class="case-card r">
+        <div class="case-img">
+          <img src="skol.png" alt="Eurobank Mobile Banking Redesign"
+            onerror="this.outerHTML='<div class=\'case-empty\'>Mobile Banking</div>'">
+        </div>
+        <div class="case-tag">Mobile · Banking · UX Research</div>
+        <h3>Mobile Banking Experience Redesign</h3>
+        <p>Redesigned the core banking experience to reduce cognitive load — cutting task completion steps and making key actions reachable in under two taps.</p>
+        <a href="https://medium.com/@thnthr/redesigning-eurobank-mobile-app-a-calmer-faster-banking-experience-ui-ux-case-study-67df9548a5f6"
+           target="_blank" class="case-link">Read Case Study →</a>
+      </div>
+
+      <div class="case-card r d1">
+        <div class="case-img">
+          <img src="hero.png" alt="Athinorama Cinema Discovery Redesign"
+            onerror="this.outerHTML='<div class=\'case-empty\'>Cinema Discovery</div>'">
+        </div>
+        <div class="case-tag">Mobile · Entertainment · UX Research</div>
+        <h3>Cinema Discovery Redesign</h3>
+        <p>Redesigned the discovery experience to reduce friction and surface showtimes faster — fewer taps, clearer hierarchy, less time deciding.</p>
+        <a href="https://medium.com/@thnthr/redesigning-athinorama-cinema-mobile-app-a-modern-clearer-cinema-discovery-experience-for-athens-eb8cb2a03e31"
+           target="_blank" class="case-link">Read Case Study →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+
+    <div class="about-grid r">
+      <p class="about-text">
+        I design products that are <strong>clear to use and practical to build.</strong>
+        My focus is reducing complexity — turning cluttered flows into interfaces
+        that feel obvious in hindsight. I work across design and front-end,
+        which means I think about constraints early and hand off work that
+        doesn't fall apart in development.
+      </p>
+
+      <div class="about-aside">
+        <div class="aside-row">
+          <h4>Based in</h4>
+          <p>Athens, Greece</p>
+        </div>
+        <div class="aside-row">
+          <h4>Focus</h4>
+          <p>UI/UX Design · Front-End Development</p>
+        </div>
+        <div class="aside-row">
+          <h4>Tools & Skills</h4>
+          <div class="chips">
+            <span class="chip">Figma</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Prototyping</span>
+          </div>
+        </div>
+        <div class="aside-row">
+          <h4>Open to</h4>
+          <p>Freelance · Remote · Hybrid</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="foot-copy">© 2026 Thanos Thiriou</span>
+</footer>
+
+<script>
+  // Set email via JS to prevent scraping and Cloudflare interference
+  const u = 'thiriou.thanos', d = 'gmail.com';
+  const addr = u + '@' + d;
+  document.getElementById('nav-email').href = 'mailto:' + addr;
+
+  // Nav stuck state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('stuck', window.scrollY > 10);
+  }, { passive: true });
+
+  // Cursor glow
+  const glow = document.getElementById('glow');
+  window.addEventListener('mousemove', e => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top  = e.clientY + 'px';
+  }, { passive: true });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.r').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
