@@ -21,6 +21,7 @@
     <a id="nav-email" href="#">Email</a>
     <a href="https://jumpshare.com/share/HaQna2WvhnbMs1Mr6SXZ" target="_blank">CV</a>
     <a href="https://www.linkedin.com/in/thanosthiriou/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/thiriou" target="_blank">GitHub</a>
   </div>
 </nav>
 
@@ -46,7 +47,6 @@
         onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
         View Work ↓
       </button>
-      <a href="https://github.com/thiriou" target="_blank" class="btn btn-ghost">GitHub ↗</a>
     </div>
   </div>
 </section>
@@ -58,43 +58,42 @@
 
     <div class="feat-visual r">
       <span class="feat-badge">Design + Development</span>
-      <div class="feat-visual-inner">
-        <div class="feat-wordmark">TaskFlow</div>
-        <div class="feat-sublabel">Project Management Tool</div>
+      <div class="feat-visual-inner feat-visual-img">
+        <img src="kodio-screen.png" alt="kodio — code reading tool"
+          onerror="this.parentElement.innerHTML='<div class=\'feat-wordmark\'>kodio_</div><div class=\'feat-sublabel\'>Code Reading Tool</div>'">
       </div>
     </div>
 
     <div class="feat-body">
       <div class="r">
-        <h2 class="feat-title">TaskFlow</h2>
+        <h2 class="feat-title">kodio</h2>
         <p class="feat-desc">
-          A minimal project management tool for small teams who need focus, not features.
-          Kanban-based, mobile-first, custom drag system — zero library dependencies.
+          A code reading tool designed for two very different users — someone learning to code for the first time, and a developer reviewing unfamiliar work. One tool, two completely different mental models.
+        </p>
+        <p class="feat-desc" style="margin-top:12px;">
+          Most code explanation tools either talk down to beginners or bury experienced developers in noise. kodio separates those two needs into distinct modes — same content, different voice — so neither user has to fight the interface.
         </p>
         <div class="feat-pills">
-          <a href="#" class="feat-pill">Live Demo ↗</a>
-          <a href="#" class="feat-pill">View Code ↗</a>
+          <a href="https://thiriou.github.io/kodio-code-explainer/" target="_blank" class="feat-pill">Live Page</a>
         </div>
       </div>
 
       <div class="dstack r d1">
         <div class="drow">
-          <h4>What it is</h4>
-          <p>A task board focused on speed and spatial clarity — drag-and-drop without the overhead.</p>
-        </div>
-        <div class="drow">
-          <h4>Key Decisions</h4>
+          <h4>Key Design Decisions</h4>
           <ul>
-            <li>Kanban layout for spatial memory</li>
-            <li>Custom drag — no dependencies</li>
-            <li>Mobile-first, desktop-enhanced</li>
+            <li><strong>Two-mode reading system</strong> — "Explain it" uses plain analogies with no assumed knowledge. "Just the facts" strips everything to signal only. The toggle isn't a preference setting — it's a fundamentally different reading experience for a different person</li>
+            <li><strong>Directional layout</strong> — code sits left, analysis right. The user's eye moves left to right: from complexity toward clarity. The visual weight of the dark/light split makes that direction feel physical</li>
+            <li><strong>Line-level connection</strong> — hovering any insight highlights the exact lines it refers to. Removes the "but where in the code?" friction that makes analysis tools feel disconnected from the thing they're analysing</li>
+            <li><strong>Trace mode as execution, not a list</strong> — steps reveal one by one, mirroring how code actually runs. Designed to feel like watching something happen rather than reading a report</li>
           </ul>
         </div>
         <div class="drow">
           <h4>What I'd Improve</h4>
           <ul>
-            <li>Keyboard shortcut layer for power users</li>
-            <li>Real-time collaborative cursors</li>
+            <li>The "Explain it" copy was written by assumption — I'd validate it with real non-coders through usability testing</li>
+            <li>No onboarding moment — a first-time user has no signal for what to paste or what to expect</li>
+            <li>The empty state communicates format but not value — it should answer "why would I use this?" before asking for input</li>
           </ul>
         </div>
       </div>
@@ -158,7 +157,7 @@
         </div>
         <div class="aside-row">
           <h4>Focus</h4>
-          <p>UI/UX Design · Front-End Development</p>
+          <p>UI/UX Design</p>
         </div>
         <div class="aside-row">
           <h4>Tools & Skills</h4>
@@ -167,7 +166,6 @@
             <span class="chip">HTML</span>
             <span class="chip">CSS</span>
             <span class="chip">JavaScript</span>
-            <span class="chip">React</span>
             <span class="chip">Prototyping</span>
           </div>
         </div>
