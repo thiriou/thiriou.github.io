@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thanos Thiriou — UI/UX Designer</title>
+  <title>Thanos Thiriou — Product Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
@@ -17,23 +17,29 @@
 <nav class="nav" id="nav">
   <span class="nav-logo">Thanos Thiriou</span>
   <div class="nav-links">
+    <a href="#work" class="nav-sm-hide">Work</a>
     <a href="#about">About</a>
-    <a id="nav-email" href="#">Email</a>
+    <a id="nav-email" href="#" class="nav-sm-hide">Email</a>
     <a href="https://jumpshare.com/share/HaQna2WvhnbMs1Mr6SXZ" target="_blank">CV</a>
     <a href="https://www.linkedin.com/in/thanosthiriou/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/thiriou" target="_blank">GitHub</a>
+    <a href="https://github.com/thiriou" target="_blank" class="nav-sm-hide">GitHub</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-eyebrow">UI/UX Designer · Athens, Greece</div>
+  <div class="hero-eyebrow">
+    <span class="avail-dot"></span>
+    <span>Available for work</span>
+    <span class="eyebrow-sep">·</span>
+    <span>Athens, Greece</span>
+  </div>
 
   <h1 class="hero-headline r">
     Good design<br>
     is only half.<br>
     I do the half<br>
-    that <strong>ships.</strong>
+    that <em>ships.</em>
   </h1>
 
   <div class="hero-rule"></div>
@@ -45,10 +51,12 @@
     <div class="hero-btns">
       <button class="btn btn-primary"
         onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
-        View Work ↓
+        View Work
       </button>
     </div>
   </div>
+
+  <div class="hero-scroll-hint">scroll</div>
 </section>
 
 <!-- FEATURED PROJECT -->
@@ -106,30 +114,60 @@
   <div class="wrap">
     <p class="eyebrow">Case Studies</p>
 
-    <div class="case-grid">
+    <div class="cs-grid">
 
-      <div class="case-card r">
-        <div class="case-img">
-          <img src="case-study-banking.png" alt="Eurobank Mobile Banking Redesign"
-            onerror="this.outerHTML='<div class=\'case-empty\'>Mobile Banking</div>'">
+      <article class="cs-card r">
+        <div class="cs-card-img">
+          <img src="case-study-banking.png" alt="Mobile Banking Redesign"
+            onerror="this.outerHTML='<div class=\'cs-empty\'>Mobile Banking</div>'">
         </div>
-        <div class="case-tag">Mobile · Banking · UX Research</div>
-        <h3>Mobile Banking Experience Redesign</h3>
-        <p>Redesigned the core banking experience to reduce cognitive load — cutting task completion steps and making key actions reachable in under two taps.</p>
-        <a href="https://medium.com/@thnthr/redesigning-eurobank-mobile-app-a-calmer-faster-banking-experience-ui-ux-case-study-67df9548a5f6"
-           target="_blank" class="case-link">Read Case Study →</a>
+        <div class="cs-card-body">
+          <span class="cs-card-tags">Mobile · Banking · UX Research</span>
+          <h3 class="cs-card-title">Mobile Banking Experience Redesign</h3>
+          <a href="https://medium.com/@thnthr/redesigning-eurobank-mobile-app-a-calmer-faster-banking-experience-ui-ux-case-study-67df9548a5f6"
+             target="_blank" class="cs-cta">Read Case Study →</a>
+        </div>
+      </article>
+
+      <article class="cs-card r d1">
+        <div class="cs-card-img">
+          <img src="case-study-cinema.png" alt="Cinema Discovery Redesign"
+            onerror="this.outerHTML='<div class=\'cs-empty\'>Cinema Discovery</div>'">
+        </div>
+        <div class="cs-card-body">
+          <span class="cs-card-tags">Mobile · Entertainment · UX Research</span>
+          <h3 class="cs-card-title">Cinema Discovery Redesign</h3>
+          <a href="https://medium.com/@thnthr/redesigning-athinorama-cinema-mobile-app-a-modern-clearer-cinema-discovery-experience-for-athens-eb8cb2a03e31"
+             target="_blank" class="cs-cta">Read Case Study →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section section-approach">
+  <div class="wrap">
+    <p class="eyebrow">Approach</p>
+    <div class="approach-grid">
+
+      <div class="approach-col r">
+        <span class="approach-num">01</span>
+        <h3>Map confusion<br>before opening Figma</h3>
+        <p>I trace where users actually stall. Most redesigns fail because they address symptoms, not the structure underneath them.</p>
       </div>
 
-      <div class="case-card r d1">
-        <div class="case-img">
-          <img src="case-study-cinema.png" alt="Athinorama Cinema Discovery Redesign"
-            onerror="this.outerHTML='<div class=\'case-empty\'>Cinema Discovery</div>'">
-        </div>
-        <div class="case-tag">Mobile · Entertainment · UX Research</div>
-        <h3>Cinema Discovery Redesign</h3>
-        <p>Redesigned the discovery experience to reduce friction and surface showtimes faster — fewer taps, clearer hierarchy, less time deciding.</p>
-        <a href="https://medium.com/@thnthr/redesigning-athinorama-cinema-mobile-app-a-modern-clearer-cinema-discovery-experience-for-athens-eb8cb2a03e31"
-           target="_blank" class="case-link">Read Case Study →</a>
+      <div class="approach-col r d1">
+        <span class="approach-num">02</span>
+        <h3>Design with<br>the build in mind</h3>
+        <p>I annotate decisions, flag constraints, and write specs as part of the design process — not an afterthought. Work that doesn't survive development isn't finished.</p>
+      </div>
+
+      <div class="approach-col r d2">
+        <span class="approach-num">03</span>
+        <h3>Break it before<br>someone else does</h3>
+        <p>I test rough prototypes early and deliberately look for failure points. Catching breaks before the build is the cheapest iteration you'll ever do.</p>
       </div>
 
     </div>
@@ -180,14 +218,30 @@
 
 <!-- FOOTER -->
 <footer>
-  <span class="foot-copy">© 2026 Thanos Thiriou</span>
+  <div class="foot-inner">
+    <div class="foot-left">
+      <p class="foot-cta">Let's work together.</p>
+      <a id="foot-email" href="#" class="foot-email">—</a>
+    </div>
+    <div class="foot-right">
+      <div class="foot-links">
+        <a href="https://www.linkedin.com/in/thanosthiriou/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/thiriou" target="_blank">GitHub</a>
+        <a href="https://jumpshare.com/share/HaQna2WvhnbMs1Mr6SXZ" target="_blank">CV</a>
+      </div>
+      <span class="foot-copy">© 2026 Thanos Thiriou</span>
+    </div>
+  </div>
 </footer>
 
 <script>
-  // Set email via JS to prevent scraping and Cloudflare interference
+  // Email — set via JS to prevent scraping
   const u = 'thiriou.thanos', d = 'gmail.com';
   const addr = u + '@' + d;
   document.getElementById('nav-email').href = 'mailto:' + addr;
+  const fe = document.getElementById('foot-email');
+  fe.href = 'mailto:' + addr;
+  fe.textContent = addr;
 
   // Nav stuck state
   const nav = document.getElementById('nav');
@@ -195,7 +249,7 @@
     nav.classList.toggle('stuck', window.scrollY > 10);
   }, { passive: true });
 
-  // Cursor glow
+  // Glow (disabled)
   const glow = document.getElementById('glow');
   window.addEventListener('mousemove', e => {
     glow.style.left = e.clientX + 'px';
